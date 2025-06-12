@@ -6,12 +6,15 @@
 	defaultBranch = main
 
 [status]
-    branch = true
-    showStash = true
-    showUntrackedFiles = all
+	branch = true
+	showStash = true
+	showUntrackedFiles = all
 
 [url "git@github.com:lieonlion/"]
-    insteadOf = "ln:"
+	insteadOf = "ln:"
 
 [url "git@github.com:"]
-    insteadOf = "gh:"
+	insteadOf = "gh:"
+
+[include]
+	path = ~/.config/git/credentials

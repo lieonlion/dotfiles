@@ -1,4 +1,7 @@
 ### Fish ###
 fish/.config/fish/fish_variables
 
+### Git ###
+git/.config/git/credentials
+
 # End of .gitignore
