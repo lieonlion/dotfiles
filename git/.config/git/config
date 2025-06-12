@@ -1,0 +1,17 @@
+[user]
+	name = LieOnLion
+	email = lieonlion4@gmail.com
+
+[init]
+	defaultBranch = main
+
+[status]
+    branch = true
+    showStash = true
+    showUntrackedFiles = all
+
+[url "git@github.com:lieonlion/"]
+    insteadOf = "ln:"
+
+[url "git@github.com:"]
+    insteadOf = "gh:"
