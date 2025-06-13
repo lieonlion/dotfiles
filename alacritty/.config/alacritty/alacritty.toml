@@ -1,0 +1,8 @@
+[general]
+    import = [
+        # Theme
+        "./themes/start_theme.toml"
+    ]
+
+[terminal]
+    shell = "fish"
