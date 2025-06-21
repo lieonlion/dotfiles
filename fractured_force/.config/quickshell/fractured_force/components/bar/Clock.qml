@@ -17,7 +17,7 @@ Rectangle {
 
         font.family: "DejaVuSansM Nerd Font Mono"
         font.weight: Font.Bold
-        font.pixelSize: 14
+        font.pixelSize: Math.ceil(parent.height / 1.5)
         lineHeight: 0.5
 
         SystemClock {

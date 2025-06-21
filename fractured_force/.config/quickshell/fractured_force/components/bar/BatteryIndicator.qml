@@ -7,13 +7,20 @@ ClippingRectangle {
     id: battery_pill
 
     readonly property int charge: Math.floor(UPower.displayDevice.percentage * 100)
-    // readonly property int charge: 85
+    // readonly property int charge: 75
     readonly property int state: UPower.displayDevice.state
 
     height: parent.height
-    width: height * 1.75
+    width: battery_pill_text.width + height / 2
     radius: width / 2
     color: "#bbb"
+
+    Behavior on width {
+        NumberAnimation {
+            duration: 350
+            easing.type: Easing.InOutBack
+        }
+    }
 
     Rectangle {
         id: battery_pill_charge
@@ -48,7 +55,7 @@ ClippingRectangle {
 
         font.family: "DejaVuSansM Nerd Font Mono"
         font.weight: Font.Bold
-        font.pixelSize: 14
+        font.pixelSize: Math.ceil(parent.height / 1.5)
         lineHeight: 0.5
     }
 }
